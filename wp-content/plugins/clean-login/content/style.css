@@ -76,6 +76,12 @@ to your current WordPress template, and if something behaves abnormal please con
 	text-align: center;
 }
 
+.cleanlogin-form label.cleanlogin-terms {
+	text-align: inherit;
+	font-size: inherit;
+	text-transform: inherit;
+}
+
 .cleanlogin-field,
 .cleanlogin-form input[type="submit"] {
 	margin-bottom: 20px;
@@ -88,6 +94,18 @@ to your current WordPress template, and if something behaves abnormal please con
 	height: 36px;
 	padding: 4px 8px;
 	width: 100%;
+}
+
+.cleanlogin-form select {
+	color: #7c7c7c;
+	width: 100%;
+	height: 36px;
+	-webkit-appearance: menulist-button;
+}
+
+.cleanlogin-form span {
+	color: #7c7c7c;
+	margin-left: 8px;
 }
 
 .cleanlogin-form button,

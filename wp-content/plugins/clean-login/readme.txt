@@ -3,8 +3,8 @@ Contributors: hornero, carazo
 Donate link: http://codection.com
 Tags: form, login, registration, editor, lost password, responsive, wpml, internationalization, languages, role, CAPTCHA, honeypot, shortcode, wordpress, frontend
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 1.1.7
+Tested up to: 4.2.2
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,8 +28,8 @@ Responsive Frontend Login and Registration plugin. A plugin for displaying login
 
 ### Style
 
-*   Every form created is Responsive
-*   CSS adapted to every theme
+*   Every form created is responsive
+*   CSS adapted to each theme
 
 ### Spam protection
 
@@ -74,9 +74,81 @@ Please, refer to [Installation section](https://wordpress.org/plugins/clean-logi
 
 == Changelog ==
 
+= 1.5.1 =
+*   Spanish translation updated
+*   Donation link included
+*   Reflected XSS vulnerability fixed. Thanks to [HSASec-Team](https://www.HSASec.de)
+
+= 1.5 =
+*   Spanish translation updated
+*   Clean Login register with mandatory checkbox. Feature supported by Martijn van der Wijck
+
+= 1.4.1 =
+*   Swedish language included. Thanks to Didrik Holstensson Kvist
+*   Tested on 4.2.2
+*   Bug fixed 'query_arg not sanitized at login form'. Thanks to KTS915.
+
+= 1.4 =
+*   Spanish translation updated
+*   .cleanlogin-field-role class added to ensure more flexibility in CSS styling
+*   Polish language included. Thanks to Jarosław Idzior
+*   ...query_arg()'s have been sanitized to avoid [XSS vulnerability](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
+*   Registration form shortcode adds standard role capability as parameter, e.g. [clean-login-register role="contributor"]. Feature supported by Joyce Tan
+
+= 1.3 =
+*   Email notification for new registered users with an editable email content, as option in the setting page. Feature supported by Роман Перевала (Perevala Roman)
+*   Predefined roles by the administrator when a new user is registered with the ability to choose his/her own role, as option in the setting page. Feature supported by Роман Перевала (Perevala Roman)
+*   Translation included in the restore password email subject
+*   Translation included in the new user email subject
+
+= 1.2.8 =
+*   Logout link included in default Clean Login Widget
+
+= 1.2.7 =
+*   Bug fixed 'Notice: Use of undefined constant DOING_AJAX'
+
+= 1.2.6 =
+*   Bug fixed in AJAX queries. Thanks again to Роман Перевала for reporting
+
+= 1.2.5 =
+*   Bug fixed in block dashboard access (as option) related with some AJAX interactions. Thanks to Роман Перевала for reporting
+
+= 1.2.4 =
+*   FAQ section included.
+
+= 1.2.3 =
+*   French language updated. Thanks to Alain Sole
+*   Tested on 4.2
+
+= 1.2.2 =
+*   Bug fixed in password complexity checker. Thanks to Steve Scofield for reporting
+
+= 1.2.1 =
+*   Russian language included. Thanks to Anastassiya Polyakova
+*	Hebrew language filename fixed
+
+= 1.2 =
+*   Password complexity as option. Passwords must be at least eight characters including one upper/lowercase letter, one special/symbol character and alphanumeric characters. Passwords should not contain the user\'s username, email, or first/last name. Feature supported by Steve Scofield
+*	"Failed security check" replaced by "Failed security check, expired Activation Link due to duplication or date."
+
+= 1.1.11 =
+*   Italian language included. Thanks to Walter Priori Friggi
+
+= 1.1.10 =
+*   Persian language included. Thanks to Morteza Rajabzade
+*   Dutch language included. Thanks to Hans van der Marel
+
+= 1.1.9 =
+*   Improving captcha visibility (higher font size). Thanks to plentyland for the feedback.
+*   WP Super Cache full compatibility (https://wordpress.org/plugins/wp-super-cache/)
+
+= 1.1.8 =
+*   Brazilian Portuguese language included. Thanks to Filipe Mendes Schüler (@fmschuler)
+*   Tested on 4.1.1
+
 = 1.1.7 =
 *   German language included. Thanks to Rainer (rainerma)
-*	Serbian language included. Thanks to Borisa Djuraskovic (from webhostinghub.com)
+*   Serbian language included. Thanks to Borisa Djuraskovic (from webhostinghub.com)
 
 = 1.1.6 =
 *   Hebrew language updated. Thanks again to Ahrale (from Atar4U)
@@ -84,7 +156,7 @@ Please, refer to [Installation section](https://wordpress.org/plugins/clean-logi
 = 1.1.5 =
 *   Hebrew language included. Thanks to Ahrale (from Atar4U)
 *   Tested on 4.1
-*	WPML Certified plugin (http://wpml.org/plugin/clean-login/)
+*   WPML Certified plugin (http://wpml.org/plugin/clean-login/)
 
 = 1.1.4 =
 *   Danish language included. Thanks to Bkold (Børge Kolding)
@@ -142,7 +214,9 @@ Please, refer to [Installation section](https://wordpress.org/plugins/clean-logi
 
 == Frequently Asked Questions ==
 
-*   Not yet
+*   Can I use my email in addition to your username for login? Yes, through [WP Email Login](https://wordpress.org/plugins/wp-email-login/).
+*   Can I modify my Avatar? Clean Login uses your email to get your Avatar from the Gravatar service (from Automattic), but if you want to modify from the WordPress dashboard you can use [WP User Avatar](https://wordpress.org/plugins/wp-user-avatar/).
+*   Is Clean Login compatible with AJAX-based plugins/themes/queries? Yes, from the version 1.2.6.
 
 == Installation ==
 
